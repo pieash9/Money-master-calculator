@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="">
+    <header class="text-center">
+        <h1 class="text-5xl text-cyan-500 font-semibold my-10">Money calculator</h1>
+    </header>
+    <section class="bg-sky-100 flex justify-between w-[80%] mx-auto p-8 rounded">
+        <img src="money-master.png" alt="">
+        <div class="flex-row p-5">
+            <div>
+                <h3 class="text-2xl font-medium mb-2">Total Income </h3>
+                <input id="income" class="h-10 border-2 mb-6 pl-3" type="text" placeholder="Enter income">
+            </div>
+            <div>
+                <h3 class="text-2xl font-medium mb-2">Expenses</h3>
+                <input id="expense" class="h-10 border-2 block mb-3 pl-3" type="text" placeholder="Enter Food">
+                <input id="rent" class="h-10 border-2 block mb-3 pl-3" type="text" placeholder="Enter Rent">
+                <input id="clothes" class="h-10 border-2 block mb-3 pl-3" type="text" placeholder="Enter Clothes">
+            </div>
+            <button id="calculate-btn" class="bg-sky-500 px-10 py-2 rounded text-white font-semibold">Calculate</button>
+            <div class="mt-5">
+                <h3  class="text-2xl font-medium mb-3">Total Expenses: <span id="total-expense">0</span></h3>
+                <h3 class="text-2xl font-medium mb-5">Balance: <span id="balance-after-expanse">0</span></h3>
+            </div>
+            <div class="flex items-center gap-2 mb-5">
+                <p class="text-base">Save:</p>
+                <input id="saving-percentage" class="h-10 border-2 block pl-3" type="text" placeholder="Enter Savings %">
+                <button id="savings-btn" class="bg-sky-500 px-5 py-2 rounded text-white font-semibold">Save</button>
+            </div>
+            <div>
+                <h3 class="text-2xl font-medium mb-2">Saving Amount: <span id="savings-amount">0</span></h3>
+                <h3 class="text-2xl font-medium mb-5">Remaining Balance: <span id="remaining-balance">0</span></h3>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p class="text-center text-xl font-medium my-10">All right reserved to <span class="text-sky-600">Md. Pieash Ahmed</span></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
